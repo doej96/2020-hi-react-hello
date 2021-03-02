@@ -1,0 +1,17 @@
+<script>
+  var a = {
+    fn: function() {
+      console.log(this);
+    },
+    fn2: () => {
+      console.log(this);
+    },
+    fn3() {
+      console.log(this);
+    }
+  }
+
+  a.fn() //a(객체 자체)
+  a.fn2() //window
+  a.fn3() //a
+</script>
